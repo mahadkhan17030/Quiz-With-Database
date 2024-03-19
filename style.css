@@ -1,0 +1,133 @@
+h1 {
+    font-size: 90px;
+}
+.bgdark {
+    color: #FFD700;
+    font-weight: bolder;
+    margin-top: 4%;
+}
+.quest {
+    margin-top: 2%;
+ }
+
+.questionss {
+    margin-top: 2%;
+    color: #000;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+
+.btn {
+    margin-left: 40%;
+    margin-top: 5%;
+    width: 200px;
+}
+.shadow:hover {
+    background-color: #000 !important;
+    color: whitesmoke !important;
+}
+.opt {
+    overflow: initial;
+    font-size: 30px;
+    margin-top: 25px;
+    width: 70%;
+    color: wheat;
+    background: transparent;
+    display: inline-table;
+    border-color: black;
+}
+.opt:hover {
+    color: white;
+}
+
+h3 {
+    font-size: 50px;
+    color: #000;
+}
+
+.res {
+    color: black;
+}
+
+#showResult {
+    box-sizing: content-box;
+    border-radius: 10px 10px;
+    border-color: #00008B;
+    box-shadow: #000;
+    background-image: linear-gradient(to right, greenyellow, green);
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    width: 40vw;
+    margin-left: 30%;
+    margin-top: 8% !important;
+    height: 60vh;
+    display: none;
+}
+
+#currentQuestion {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+@media only screen and (max-width:400) {
+    #showResult {
+        width: 100vw;
+        justify-content: left;
+        align-items: stretch;
+        margin-left: -30% !important; 
+        margin-right: 70% !important;
+    }
+
+    body {
+        display: block;
+    }
+
+    .opt {
+        border-color: transparent;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width:479) {
+    #showResult {
+        width: 100vw;
+    }
+
+    body {
+        display: flex;
+    }
+
+    .opt {
+        font-size: 20px;
+        border-color: transparent;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width:767px) {
+    #showResult {
+        width: 100vw;
+    }
+
+    .opt {
+        font-size: 25px;
+        border-color: transparent;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    body {
+        display: flex;
+    }
+}

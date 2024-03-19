@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <script src="https://kit.fontawesome.com/69d25744bf.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-info">
+    <div id="maindiv">
+    <div class="bgdark border-bottom head text-center">
+        <h1>Quiz App</h1>
+    </div>
+    <div class="text-light fs-5  quest text-center">
+        <p class="text-dark" >Question No:   <span id="currentQuestion" class="fs-3">0</span>/<span id="totalQuestion">6</span></p>
+    </div>
+    <div class="w-100 questionss text-center fs-2" >
+        <p id="displayQuestion">ABC</p>
+    </div>
+    <div class="container py-2">
+        <div id="options" class="options row"> 
+            <div>
+                <button class="btn rounded-pill bgdark bg-primary  shadow-lg text-warning " onclick="this.style.display = 'none' ">Option 1</button>
+            </div>
+        </div> 
+    </div>
+    <div>
+        <button class="btn rounded-pill bgdark bg-dark bg-outline-warning fs-2 shadow text-warning " id="nextBtn" onclick="next()">NEXT</button>
+    </div>
+</div>
+    <div id="showResult">
+        <div>
+            <h3>Marks:  <span class="res" id="dispMarks">20</span> </h3>
+            <h3>Grade: <span id="dispGrade" class="res"></span></h3> 
+            <h3>Percentage: <span id="dispPercentage" class="res"></span></h3> 
+            <h3>Status: <span id="dispStatus" class="res"></span></h3> 
+            </div>
+    </div>
+    
+    <script type="module" src="app.js"></script>
+</body>
+</html>
